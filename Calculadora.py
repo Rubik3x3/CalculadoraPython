@@ -1,3 +1,6 @@
+#De: Franco T. 
+#Fecha: 11 de jun de 2021-<En proceso>
+
 
 #<<<------------------------->>>#
 #<<<       Calculadora       >>>#
@@ -21,8 +24,11 @@
 
 #FACTORIAL: Para el factorial hay que ingresar el numero 6 o escribir la palabra "factorial". 
 
-
 #NUMEROS_IGUALES_O_DIFERENTES: Para averiguar si un numero es igual o diferente hay que ingresar el numero 7 o escribir la palabra "iguales".
+
+#ORDENAR DE MENOR A MAYOR: Ingresar los numeros a ordenar dentro del []
+
+#ORDENAR DE MAYOR A MENOR: Ingresar los numeros a ordenar dentro del []
 
 
 #-------------#
@@ -43,6 +49,10 @@ potenciacion = 5
 factorial = 6
 
 iguales = 7
+
+ordenar_mM = 8
+
+ordenar_Mm = 9
 
 
 #-----------------#
@@ -168,3 +178,33 @@ if input() == iguales:
     else:
 
         print("Los numeros son Diferentes")
+
+#------------------------------#
+#          Ordenar_mM          #
+#------------------------------#
+
+
+if input() == ordenar_mM:
+
+    #Ingresar numeros a ordenar dentro de [] separados por coma. Ej [1, 5, 6]
+    
+    numeros = []
+    numeros.sort()
+
+    print("Los numeros ordenados de menor a mayor son:")
+    print(numeros)
+
+
+#------------------------------#
+#          Ordenar_Mm          #
+#------------------------------#
+
+if input() == ordenar_Mm:
+
+    #Ingresar numeros a ordenar dentro de [] separados por coma. Ej [1, 5, 6]
+
+    numeros = []
+    numeros.sort(reverse=True)
+
+    print("Los numeros ordenados de mayor a menor son:")
+    print(numeros)
